@@ -1,0 +1,36 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(6,100px);
+    /*column-gap: 10px;*/
+    grid-template-areas:"imagem imagem imagem parte1 parte1 parte1 parte1 parte1 parte1"
+                        "imagem imagem imagem parte1 parte1 parte1 parte1 parte1 parte1"
+                        "imagem imagem imagem parte1 parte1 parte1 parte1 parte1 parte1"
+                        "imagem imagem imagem parte2 parte2 parte2 parte3 parte3 parte3"
+                        "imagem imagem imagem parte2 parte2 parte2 parte3 parte3 parte3"
+                        "imagem imagem imagem parte2 parte2 parte2 parte3 parte3 parte3";
+}
+.img{
+    grid-area: imagem;
+}
+
+.item1{
+    grid-area: parte3;
+}
+
+.item2{
+ grid-area: parte1;
+}
+
+.item3{
+    grid-area: parte2;
+}
+
+.item4{
+    grid-area: parte2;
+}
+
+.item5{
+    grid-area: parte3;
+    margin: 20px;
+}
